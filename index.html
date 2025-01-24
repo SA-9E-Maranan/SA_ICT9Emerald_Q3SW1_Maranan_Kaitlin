@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money, Money, Money!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+    background-image: url(bg1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.money {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #7e7982;
+    border: 1px solid #fcaee4;
+    
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 5px 5px 5px #d6aefc;
+}
+
+#convert {
+    background-color: #fce3f7;
+    width: 700px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #fcaee4;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #d6aefc;
+}
+
+kbd {
+     font-size: 50px;
+     font-family: Pixelify Sans;
+     background-color: #fce3f7;
+     color: #574a63;
+     border: 2px solid #d6aefc;
+     border-radius: 10px;
+     padding: 8px;
+
+}
+
+a{
+     margin-left: 20px;
+     margin-right: 20px;
+}
+
+h1 {
+     font-family: Pixelify Sans;
+     color: #574a63;
+     background-color: #fff0fa;
+     margin-top: -20px;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+h4 {
+     font-family: Pixelify Sans;
+     color: #574a63;
+}
+
+#currency {
+    font-family: Pixelify Sans;
+    color: #574a63;
+    background-color: #fce3f7;
+    font-size: 20px;
+    border: 2px solid #d6aefc;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+p {
+    font-family: Raleway;
+    color: #574a63;
+}
+
+#refresh {
+    font-family: Pixelify Sans;
+    color: #574a63;
+    background-color: #facde8;
+    border-radius: 5px;
+    border: 2px dashed #d6aefc;
+    padding: 10px;
+}
+
+</style>
+
+<body>
+<br><br>
+    
+<div class="container" id="convert">
+    <p><h1> Convert your PHP here! </h1></p>
+    <br>
+
+    <center>
+    <img src="money.gif" class="money rounded">
+    <br><br><br>
+
+    <div class="col-md-12">
+        <script>
+        var php = 100; //given value in peso
+      
+
+        document.write("<h4>Click the buttons below to convert</h4> <br>" + "<kbd>" + 100 + "</kbd>" + "<h4> <br> pesos to other currencies</h4>"); 
+
+        </script>
+    </div>
+
+    </center>
+    <center>     
+    <div class="col-md-12">
+        <p id="display"></p>
+        <br>
+        <button type="button" class="btn" id="currency" onclick="var php = 100; var $dollar=58.66; document.getElementById('display').innerHTML= '<kbd>' + php/$dollar + '</kbd>';">Dollar</button>
+
+        <button type="button" class="btn" id="currency" onclick="var php = 100; var baht=1.69; document.getElementById('display').innerHTML= '<kbd>' + php/baht + '</kbd>';">Baht</button>
+        <button type="button" class="btn" id="currency" onclick="var php = 100; var yen=0.37401; document.getElementById('display').innerHTML= '<kbd>' + php/yen + '</kbd>';">Yen</button>
+        <button type="button" class="btn" id="currency" onclick="var php = 100; var euro=61; document.getElementById('display').innerHTML= '<kbd>' + php/euro + '</kbd>';">Euro</button>
+    </div>
+    </center>
+
+    <br><br>
+
+    <center>
+    <div class="col-md-12">
+        <a href="index.html"><button class="btn btn-lg" id="refresh">Refresh</button></a>
+        <br><br>
+
+    </div>
+</div>
+    </center>
+
+    <br>
+
+    <center>
+    <p id="links"> Background from<a href="https://ph.pinterest.com/pin/62768988550680722/" target="_blank">pinterest.com</a>and GIF from<a href="https://ph.pinterest.com/pin/504192120759208293/" target="_blank">pinterest.com</a></p>
+    </center>
+
+</body>
+</html>
